@@ -1,0 +1,85 @@
+        
+    .head_verde{
+        background-color: #3498DB;
+        border-bottom: 4px solid #2980B9; 
+        box-shadow: 0 7px 0 rgba(0, 0, 0, 0.15);
+        height: 55px;
+        left: 0;
+        margin-left: -14px;
+        top: 36px;
+        margin-bottom: 50px;
+    }
+    .icono_libro{
+    	color:#2980B9;
+    	margin-top: 0px;
+        margin-left: -14px;
+    	font-size:45px;
+    	padding-left: 8px;
+    	padding-top: 4px;
+
+    }
+    .verticalLine {
+        border-right: thick solid black;
+         width: 0.5px;
+         color: black;
+
+
+    }
+    .barra_vertical{
+    float:left;
+    border-left: 1px solid #2980B9;
+    width:1px;
+    height:40px;
+    margin-left: -33px;
+    margin-top: 8px;
+
+    }
+    .toolbar_btn {
+        background-color: #8bc954;
+        color: #fff;
+        font-size: 12px;
+        height: 46px;
+        line-height: 8px;
+        margin: 0 3px 2px 0;
+        overflow: hidden;
+        padding: 2px 5px !important;
+        position: relative;
+        text-align: center;
+        text-overflow: ellipsis;
+        text-shadow: none;
+        white-space: nowrap;
+    }
+    .btn-agregar:hover{
+    	background-color: white !important;
+    	color:#3498db !important;
+    }
+    a[type="button"]{
+        color:white ;
+    }
+@media (max-width: 778px) {
+.head_verde{
+    margin-top: 50px;
+ }
+ .titulorow{
+    font-size: 22px !important;
+ }
+ .tituloadd{
+     font-size: 16px !important;
+ }
+    
+}
+@media (max-width: 620px) {
+ .titulorow{
+    font-size: 20px !important;
+ }
+ .tituloadd{
+     font-size: 16px !important;
+ }
+    .barra_vertical{
+    display: none;
+    }
+
+}
+.form-error{
+    color: red !important;
+}  

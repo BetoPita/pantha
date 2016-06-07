@@ -1,0 +1,361 @@
+@font-face {
+    font-family: "titulo";
+    src: url(../fonts/OpenSans-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "helvetic";
+    src: url(../fonts/HelveticaNeue-Light.otf) format("truetype");
+}
+.header{
+	width: 100%;
+	top:0;
+	position: relative;
+	padding: 20px 0px 10px 35px;	
+	margin-bottom: 0px !important;
+}
+body{
+	background-color: #7fb6e3 !important;
+
+}
+.navbar-right{
+	margin-top: -15px !important;
+}
+.salto{
+	padding-top: 0px !important;
+}
+.nav{
+	 margin-right: 60px !important;
+}
+
+.titulo{
+	font-size: 50px;
+	font-family: 'titulo';
+	font-weight: bold;
+}
+.titulo_contacto{
+	font-size: 29px;
+	font-family: 'titulo';
+	font-weight: bold;
+}
+.titulo_proceso{
+	font-size: 40px;
+	font-family: 'titulo';
+	font-weight: bold;
+	padding-bottom: 30px;
+}
+.container{
+	padding-top: 50px; 
+}
+.container-proceso{
+	padding-left: 40px !important; 
+}
+.texto-tratamiento{
+	font-size: 20px;
+	color: white;
+}
+.text-puntos{
+	color: white;
+	font-size: 18px;
+}
+footer{
+	height: 80px;
+	position: absolute;
+	bottom: 0px;
+	background-color: #333333;
+	width: 100%;
+	font-family: 'helvetic';
+	margin-bottom: 0px;
+}
+.blanco{
+	width: 100%;
+	background-color: white;
+	height: 35px;
+
+
+}
+.texto-descripcion{
+	color: white;
+	font-size: 18px;
+	line-height: 40px;
+
+}
+.separar-imagen{
+	margin-bottom: 15px !important;
+}
+.img-izquierda{
+	padding-right: 0px !important;
+}
+.img-derecha{
+	padding-left: 0px !important;
+
+}
+.enviar_contacto{
+	padding-right: 35px; 
+	padding-left: 35px; 
+	padding-top: 5px; 
+	margin-top: 10px;
+}
+img{
+	width: 230px;
+	border-radius: 5px;
+}
+.btn-default{
+	font-size: 18px !important;
+}
+.col-sm-6{
+	width: 0px !important;
+}
+.espacio{
+	margin-top: 30px;
+}
+.valoracion{
+	color:white;
+}
+.boton-llenar{
+	padding-top: 15px;
+}
+.lbl-footer1{
+	color: white;
+	margin: 14px 0px 0px 0px;
+}
+.lbl-footer2{
+	color: white;
+	margin: 14px 0px 0px 0px;
+}
+.lbl-footer3{
+	color: white;
+	margin: 14px 0px 0px 0px;
+}
+.iconos{
+	width: 40px;
+	margin-right: 10px;
+}
+.p-b-10{
+	padding-bottom: 1px;
+}
+.color_letra{
+	color:white;
+	font-family: 'helvetic';
+}
+.datos{
+
+	width: 100%;	
+	background-color: white;
+	position: absolute;
+	margin-top: 20px;
+	padding-left: 70px; 
+	padding-top: 20px;
+	margin-right: 0px; 
+	margin-left: 0px;
+}
+.datos2{
+
+	width: 100%;	
+	background-color: white;
+	position: absolute;
+	min-height: 70px !important;
+	bottom: 50px;
+	margin-left: 0px;
+	padding-top: 15px;
+
+}
+
+
+.fuente{
+	font-size: 14px;
+	margin-bottom: 0px;
+}
+textarea{
+	resize:none;
+}
+.img-contacto{
+	width: 25px;
+	margin-right: 10px;
+}
+.datos-dr{
+	font-size: 12px;
+	line-height: 3px;
+}
+.div-footer{
+	display: inline-block;
+
+}
+.linea-azul{
+	border-right: solid 2px #7fb6e3;
+	padding-right: 40px;
+}
+.linea-azul_telefono{
+	border-right: solid 2px #7fb6e3;
+	padding-right: 50px;
+}
+.div-telefono{
+	padding-left: 0px;
+	margin-left: -15px;
+}
+#div_mapa{
+	margin-top: 10px;
+}
+.label-sitio{
+	color: white;
+	font-size: 10px;
+}
+.label-sitio_escuela{
+	color: white;
+	font-size: 10px;
+}
+.sitio-doc{
+	cursor: pointer;
+	text-decoration: none;
+}
+.img-50{
+	width: 50px !important;
+}
+.img-45{
+	width: 45px !important;
+}
+.img-55{
+	width: 105px !important;
+}
+.form-error{
+	color:red;
+}
+.form-error >p{
+	margin-bottom: 0px;
+}
+
+@media (max-width: 1200px) {
+	.texto-descripcion{
+	font-size: 15px;
+	font-weight: bold;
+
+	}
+ }
+@media (max-width: 986px) {
+	.espacio{
+	margin-top: 0px;
+	}
+	.lbl-footer2{
+		font-size: 12px !important;
+	}
+	.text-puntos{
+		font-size: 16px;
+	}
+	.titulo_proceso {
+		font-size: 30px;
+	}
+	.datos-dr{
+		font-size: 9px !important;
+	}	
+	.m-t-10{
+		margin-top: 10px;
+	}
+
+	
+
+ }
+@media (max-width: 778px) {
+	.espacio{
+	margin-top: 0px;
+	}
+	.img-contacto{
+		width: 15px;
+	}
+	.div-footer{
+		padding-right: 20px !important;
+	}
+	.titulo{
+	font-size: 50px;
+	margin-left: 20px;
+	}
+	.conozca{
+		margin-top: 10px; margin-bottom: 10px;
+	}
+	.texto-descripcion{
+		line-height: 30px;
+	}
+	.tamano-footer{
+		font-size: 8px !important;
+	}
+	.enviar_contacto{
+	padding-right: 25px !important; 
+	padding-left: 25px !important; 
+	padding-top: 5px !important; 
+	margin-top: 0px !important;
+	}
+	.titulo_contacto{
+	font-size: 20px;
+	}
+	
+	.datos-dr{
+		font-size: 8px !important;
+	}
+
+	
+ }
+ @media (max-width: 886px) {
+	.tamano-footer{
+		font-size: 10px !important;
+	}
+	footer{
+		position: relative;
+		bottom: 0px;
+		margin-top: 0px;
+	}
+	.datos{
+		height: 150px !important;
+		position: relative;
+		margin-top: 30px;		
+	}
+	.linea-azul{
+		border-right: 0px solid white;
+	}
+	.linea-azul_telefono{
+		border-right: 0px solid white;
+	}
+	#footer-contacto{
+		margin-top: 200px !important;
+	}
+	.img-55{
+	width: 65px !important;
+	}
+	
+ }
+ @media (max-width: 400px) {
+ 	.titulo_proceso {
+		font-size: 25px;
+	}
+	.lbl-footer1{
+	font-size: 9px !important;
+	}
+	.lbl-footer2{
+	font-size: 9px !important;		
+	}
+	.lbl-footer3{
+	font-size: 9px !important;		
+	}
+	
+
+	
+ }
+  @media (max-width: 620px) {
+	#div_cel1{
+		display: none !important;
+	}
+	#div_direccion1{
+		display: none !important;
+	}	
+	.datos{
+		height: 230px !important;
+	}
+	#mapa-direccion{
+		height: 150px !important;
+		width: 320px !important;
+		 padding-right: 0px !important;
+	}
+	#div_mapa{
+		 padding-right: 0px;
+	}
+	
+
+	
+ }
