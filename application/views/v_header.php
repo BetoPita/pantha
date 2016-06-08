@@ -36,12 +36,7 @@
 </script> -->
 <body>
 
-	<!--<nav class="navbar navbar-default navbar-fixed-top header">
-		  <div class="container">
-		    <img src="assets/img/logo.png" alt="">
-		    <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
-		  </div>
-	</nav> -->
+
 	<nav class="navbar navbar-default header">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -52,6 +47,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+           <!-- <a id="negro" class="" href="#">Manita negra</a> -->
+
     </div>
    
     <!-- Collect the nav links, forms, and other content for toggling -->

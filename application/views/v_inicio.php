@@ -1,7 +1,5 @@
 <?php $this->load->view('v_header'); ?>
-<?php 
-//print_r($banner);
-?>
+
 <link rel="stylesheet" href="assets/css/style2.css"> 
 
 
@@ -9,6 +7,11 @@
     <div class="col-sm-1" id="liquidBoxContainer"></div>
 
 </div> -->
+<style type="text/css">
+.header{
+	position: relative !important;
+}
+</style>
 <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">

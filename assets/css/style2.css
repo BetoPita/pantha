@@ -28,6 +28,7 @@ body{
 	padding-left: 40px;
     height: auto !important;
     padding-right: 40px;
+    margin-top: 40px;
 }
 footer{
 	height: 80px;
@@ -44,7 +45,7 @@ footer{
 .header{ 
 	width: 100%;
 	top:0;
-	position: relative;
+	position: fixed;
 	padding: 0px 0px 0px 0px;	
 	margin-bottom: 0px !important;
 	background: rgb(231, 231, 3) none repeat scroll 0 0;
@@ -71,6 +72,13 @@ ul.nav > li:hover{
 	height: 20px;
 	width: 7%;
 	display: inline-block;
+}
+#negro {
+    position: absolute;
+    background: #000;
+    color: #fff;
+    padding: 22px;
+    z-index: 10;
 }
 
 
