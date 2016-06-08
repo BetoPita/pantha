@@ -41,10 +41,12 @@ body{
     margin-top: 40px;
 }
 footer{
-	height: 80px;
+	height: 110px;
+    padding-left: 30px;
+    padding-top: 15px;
 	position: fixed;
 	bottom: 0px;
-	background-color: #333333;
+	background-color: black;
 	width: 100%;
 	font-family: 'helvetic';
 	margin-bottom: 0px !important;
@@ -70,7 +72,10 @@ footer{
     text-transform: uppercase;
 }
 .active{
-	 background-color: rgb(250, 254, 70) !important;
+	 background-color: black !important;
+}
+.active_menu{
+     background-color: rgb(250, 254, 70) !important;
 }
 
 ul.nav > li:hover{
@@ -133,6 +138,30 @@ ul.nav > li:hover{
 .titulo-promocion{
 	font-weight: bold;
 }
+
+.carousel {
+    margin-bottom: 0;
+
+}
+/* The controlsy */
+
+.carousel-control.right {
+
+}
+/* The indicators */
+.carousel-indicators {
+    right: 40%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+    background: #cecece;
+}
+.carousel-indicators .active {
+background: #428bca;
+}
 @media (max-width: 1200px) {
  }
 @media (max-width: 986px) {
@@ -151,6 +180,9 @@ ul.nav > li:hover{
 	.titulo-promocion{
 		font-size: 16px !important;
 	}
+    footer{
+        height: 60px !important;
+    }
 	.texto-gris,.promociones-precio {
 		font-size: 14px !important;
 	}

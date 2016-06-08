@@ -55,10 +55,10 @@
     <div class="collapse navbar-collapse m-t-10" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li id="cuadro-negro"></li>
-        <li class="<?php echo ($this->session->userdata('menu')=='Inicio')?'active':'' ?>"><a class="label-menu" href="#">Inicio</a></li>
-      	<li class="<?php echo ($this->session->userdata('menu')=='proceso')?'active':'' ?>"><a class="label-menu" class="salto" href="<?php echo site_url('inicio/promociones') ?>">Promociones</a></li>
-       	<li class="<?php echo ($this->session->userdata('menu')=='formato')?'active':'' ?>"><a class="label-menu" class="salto" href="<?php echo site_url('inicio/eventos') ?>">Metal Eventos</a></li>
-        <li class="<?php echo ($this->session->userdata('menu')=='comprar')?'active':'' ?>"><a class="label-menu" class="salto" href="<?php echo site_url('inicio/contacto') ?>">Contacto</a></li>
+        <li class="<?php echo ($this->session->userdata('menu')=='Inicio')?'active_menu':'' ?>"><a class="label-menu" href="#">Inicio</a></li>
+      	<li class="<?php echo ($this->session->userdata('menu')=='proceso')?'active_menu':'' ?>"><a class="label-menu" class="salto" href="<?php echo site_url('inicio/promociones') ?>">Promociones</a></li>
+       	<li class="<?php echo ($this->session->userdata('menu')=='formato')?'active_menu':'' ?>"><a class="label-menu" class="salto" href="<?php echo site_url('inicio/eventos') ?>">Metal Eventos</a></li>
+        <li class="<?php echo ($this->session->userdata('menu')=='comprar')?'active_menu':'' ?>"><a class="label-menu" class="salto" href="<?php echo site_url('inicio/contacto') ?>">Contacto</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

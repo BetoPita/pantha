@@ -14,13 +14,13 @@
 </style>
 <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
-        <ol class="carousel-indicators">
+        <!--<ol class="carousel-indicators"> 
         	<?php $contador_s=0; ?>
         	<?php foreach ($banner as $b => $value) {  ?>
         		 <li data-target="#myCarousel" data-slide-to="<?php echo $contador_s; ?>" class="<?php echo ($contador_s==0)?'active': '' ?>"></li>
 
         	<?php $contador_s++; } ?>
-        </ol>
+        </ol>-->
 
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
@@ -34,10 +34,10 @@
 
         <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev" style="font-size:100px"></span>
+            <span class="icon-prev" style="font-size:100px;margin-top: -90px;margin-right: 0px;"></span>
         </a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next" style="font-size:100px"></span>
+            <span class="icon-next" style="font-size:100px;margin-top: -90px;margin-right: 0px;"></span>
         </a>
 
     </header>

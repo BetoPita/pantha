@@ -5,24 +5,23 @@ class Inicio extends CI_Controller {
 public function __construct()
 {
     parent::__construct();
-   $this->load->model("M_banner","mb");
-   $this->load->model("M_promocion","mp");
+    $this->load->model("M_banner","mb");
+    $this->load->model("M_promocion","mp");
+    $this->load->model("M_imagenes","mi");
 }
 public function index()
 {
   $this->session->set_userdata('menu','Inicio');
   $datos['banner']=$this->mb->getBanner();
+  $datos['imagenes']=$this->mi->getImagenes();
 	$this->load->view('v_inicio',$datos);
 }
 
 public function promociones(){
   $this->session->set_userdata('menu','promociones');
   $datos['promociones']=$this->mp->getPromocion();  
+  $datos['imagenes']=$this->mi->getImagenes();
   $this->load->view('v_promociones',$datos);
-}
-public function tratamiento(){
-  $this->session->set_userdata('menu','tratamiento');
-  $this->load->view('v_tratamiento');
 }
 public function proceso(){
    $this->session->set_userdata('menu','proceso');

@@ -1,20 +1,40 @@
 <!--</div> container -->
-
 <footer>
-<div class="blanco">
-	
-</div>
-	<div class="row" style="margin-right: 0px;">
-		<div class="col-xs-6 col-sm-5 col-md-offset-1">
-			<label class="lbl-footer1 tamano-footer">© 2013-2014 Derechos reservados para Homeopatía Renal</label>
-		</div>
-		<div class="col-xs-2">
-			<label class="lbl-footer2 tamano-footer">Homeopatía Renal</label>
-		</div>
-		<div class="col-xs-4 col-sm-3">
-			<label class="lbl-footer3 tamano-footer">Diseño por The4studio.com</label>
-		</div>
-	</div>
+        <div class="row">
+        <div class="col-xs-12">
+                <div id="Carousel" class="carousel slide">
+                 
+                <!--<ol class="carousel-indicators">
+                    <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#Carousel" data-slide-to="1"></li>
+                    <li data-target="#Carousel" data-slide-to="2"></li>
+                </ol> -->
+                 
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                 	<?php $contador=0; ?>
+                 	<?php $bandera=true; ?>
+                    <?php foreach ($imagenes as $i => $value) { 
+                    	if($contador==0){ ?>
+                    	<div class="item <?php echo ($bandera==true)?'active':'' ?>">
+		                    <div class="row">
+                    	<?php } ?>
+		                        <div class="col-xs-2" style="margin-right: "><a href="#" class=""><img class="img img-responsive" src="<?php echo $value->imagen ?>" alt="Image" style="max-width:100%;"></a></div>		                   
+		                <?php $contador++;
+		                	if($contador==6){ 
+		                		$contador=0;
+		                		$bandera=false; ?>
+                		 </div><!--.row-->
+		                </div><!--.item-->
+		                	<?php }?>
+		                 
+		             <?php } ?>
+                </div><!--.carousel-inner-->
+
+                </div><!--.Carousel-->
+                 
+        </div>
+    </div>
 </footer>
 </body>
 
@@ -23,7 +43,11 @@
 	$(document).ready(function() {
     $('#myCarousel').carousel({
 	    interval: 10000
+	});
+	$('#Carousel').carousel({
+	    interval: 20000
 	})
+
 });
 </script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js" charset="UTF-8"></script>
