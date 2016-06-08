@@ -35,7 +35,14 @@
     });
 </script> -->
 <body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 	<nav class="navbar navbar-default header navbar-fixed-top ">
   <div class="container-fluid">
@@ -53,6 +60,8 @@
    
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse m-t-10" id="bs-example-navbar-collapse-1">
+  <div class="fb-like" data-href="https://www.facebook.com/PanthaTravel/?fref=ts" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
       <ul class="nav navbar-nav">
         <li id="cuadro-negro"></li>
         <li class="<?php echo ($this->session->userdata('menu')=='Inicio')?'active_menu':'' ?>"><a class="label-menu" href="#">Inicio</a></li>
