@@ -6,6 +6,7 @@ public function __construct()
 {
     parent::__construct();
    $this->load->model("M_banner","mb");
+   $this->load->model("M_promocion","mp");
 }
 public function index()
 {
@@ -16,7 +17,8 @@ public function index()
 
 public function promociones(){
   $this->session->set_userdata('menu','promociones');
-  $this->load->view('v_promociones');
+  $datos['promociones']=$this->mp->getPromocion();  
+  $this->load->view('v_promociones',$datos);
 }
 public function tratamiento(){
   $this->session->set_userdata('menu','tratamiento');

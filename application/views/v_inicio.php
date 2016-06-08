@@ -34,10 +34,10 @@
 
         <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev" style="font-size:50px"></span>
+            <span class="icon-prev" style="font-size:100px"></span>
         </a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next" style="font-size:50px"></span>
+            <span class="icon-next" style="font-size:100px"></span>
         </a>
 
     </header>

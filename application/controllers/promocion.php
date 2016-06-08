@@ -30,7 +30,7 @@ class Promocion extends CI_Controller {
   {
     $id=$this->input->get("id");
     if($this->input->post() != ''){   
-      $this->form_validation->set_rules('titulo', 'titulo', 'trim|required|xss_clean');
+      $this->form_validation->set_rules('titulo', 'título', 'trim|required|xss_clean');
       $this->form_validation->set_rules('destino', 'destino', 'trim|required|xss_clean');
       $this->form_validation->set_rules('precio', 'precio', 'trim|required|xss_clean');
       if (empty($_FILES['imagen']['name']) && $id==0)

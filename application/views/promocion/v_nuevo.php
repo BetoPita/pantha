@@ -14,16 +14,16 @@ textarea {
   <div class="col-xs-1 barra_vertical" style="left: 15px;">
   </div>
   <div class="col-xs-6">
-    <h2 style="margin-top:10px; color:white;margin-right: -100px;">Agregar producto</h2>
+    <h2 style="margin-top:10px; color:white;margin-right: -100px;">Agregar promoción</h2>
   </div>
 
 </div>
-<?php  echo form_open_multipart('promocion/agregar?id='.$input_id) ?>
+<?php  echo form_open_multipart('promocion/agregar?id='.$input_id,'id="form"') ?>
 <input type="hidden" name="img" value="<?php echo $imagen ?>">
 <input type="hidden" name="pdfsave" value="<?php echo $pdf ?>">
  	<div class="row">
 	    <div class="col-sm-4 form-group col-sm-offset-1">
-	        <label>Tìtulo</label>
+	        <label>Título</label>
 	        <div>
 	        	<?php echo $input_titulo; ?>
 	        </div>
@@ -72,7 +72,7 @@ textarea {
 </form>
 <script type="text/javascript">
 $(document).on('ready',function(){
-$(".cantidad").autoNumeric('init');
+$(".cantidad1").autoNumeric('init');
 });
 </script>
 <?php $this->load->view('layout_admin/footer'); ?>
