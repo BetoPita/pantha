@@ -30,7 +30,11 @@ public function eventos(){
   $datos['imagenes']=$this->mi->getImagenes();
   $this->load->view('v_eventos',$datos);
 }
-
+public function api(){
+  $this->session->set_userdata('menu','api');
+  $datos['imagenes']=$this->mi->getImagenes();
+  $this->load->view('v_api',$datos);
+}
 public function contacto(){
   $this->session->set_userdata('menu','contacto');
   $datos['imagenes']=$this->mi->getImagenes();

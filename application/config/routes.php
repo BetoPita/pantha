@@ -43,6 +43,7 @@ $route['inicio'] = 'inicio';
 $route['promociones'] = 'inicio/promociones';
 $route['eventos'] = 'inicio/eventos';
 $route['contacto'] = 'inicio/contacto';
+$route['api'] = 'inicio/api';
 $route['login'] = 'login';
 
 
