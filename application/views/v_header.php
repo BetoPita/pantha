@@ -64,10 +64,10 @@
 
       <ul class="nav navbar-nav ul-margen">
         <li id="cuadro-negro"></li>
-        <li class="<?php echo ($this->session->userdata('menu')=='Inicio')?'active_menu':'' ?>"><a class="label-menu" href="#">Inicio</a></li>
-      	<li class="<?php echo ($this->session->userdata('menu')=='promociones')?'active_menu':'' ?>"><a class="label-menu" class="salto" href="<?php echo site_url('inicio/promociones') ?>">Promociones</a></li>
-       	<li class="<?php echo ($this->session->userdata('menu')=='metal')?'active_menu':'' ?>"><a class="label-menu" class="salto" href="<?php echo site_url('inicio/eventos') ?>">Metal Eventos</a></li>
-        <li class="<?php echo ($this->session->userdata('menu')=='contacto')?'active_menu':'' ?>"><a class="label-menu" class="salto" href="<?php echo site_url('inicio/contacto') ?>">Contacto</a></li>
+        <li class="<?php echo ($this->session->userdata('menu')=='Inicio')?'active_menu':'' ?>"><a class="label-menu" href="<?php echo base_url('inicio') ?>">Inicio</a></li>
+      	<li class="<?php echo ($this->session->userdata('menu')=='promociones')?'active_menu':'' ?>"><a class="label-menu" class="salto" href="<?php echo base_url('promociones') ?>">Promociones</a></li>
+       	<li class="<?php echo ($this->session->userdata('menu')=='metal')?'active_menu':'' ?>"><a class="label-menu" class="salto" href="<?php echo base_url('eventos') ?>">Metal Eventos</a></li>
+        <li class="<?php echo ($this->session->userdata('menu')=='contacto')?'active_menu':'' ?>"><a class="label-menu" class="salto" href="<?php echo base_url('contacto') ?>">Contacto</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

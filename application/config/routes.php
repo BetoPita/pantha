@@ -39,6 +39,13 @@
 */
 
 $route['default_controller'] = "inicio";
+$route['inicio'] = 'inicio';
+$route['promociones'] = 'inicio/promociones';
+$route['eventos'] = 'inicio/eventos';
+$route['contacto'] = 'inicio/contacto';
+$route['login'] = 'login';
+
+
 $route['404_override'] = '';
 
 
