@@ -47,6 +47,11 @@
 	$('#Carousel').carousel({
 	    interval: 20000
 	});
+   var ancho = $(window).width();
+   var alto = $(window).height();
+   /*if(ancho == 750){
+
+   }*/
 
 });
 </script>
