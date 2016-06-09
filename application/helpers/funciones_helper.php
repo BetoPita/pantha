@@ -164,4 +164,32 @@
     }
 
   }
+  function mes($mes){
+    if($mes==1){
+      return 'Ene';
+    }else if($mes==2){
+      return 'Feb';
+    }else if($mes==3){
+      return 'Mar';
+    }else if($mes==4){
+      return 'Abr';
+    }else if($mes==5){
+      return 'May';
+    }else if($mes==6){
+      return 'Jun';
+    }else if($mes==7){
+      return 'Jul';
+    }else if($mes==8){
+      return 'Ago';
+    }else if($mes==9){
+      return 'Sep';
+    }else if($mes==10){
+      return 'Oct';
+    }
+    else if($mes==11){
+      return 'Nov';
+    }else if($mes==12){
+      return 'Dic';
+    }
+  }
 ?>

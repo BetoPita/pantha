@@ -43,7 +43,7 @@
           					<td><?php echo $s->artista; ?></td>
           					<td><?php echo $s->precio; ?></td>
                     <td><?php echo $s->lugar; ?></td>
-                    <td><?php echo $s->fecha; ?></td>
+                    <td><?php echo date_eng2esp_1($s->fecha); ?></td>
           					<td><?php echo $s->hora; ?></td>
           					
 

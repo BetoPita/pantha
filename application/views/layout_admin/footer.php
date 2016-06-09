@@ -8,6 +8,8 @@
     <script src="js/plugins/morris/morris-data.js"></script>-->
     <script type="text/javascript">
         $(document).ready(function(){
+            $('.date').datetimepicker({format:'DD/MM/YYYY'});
+            $('.hora').datetimepicker({format:'HH:mm'});
             inicio();
         });
         function inicio()

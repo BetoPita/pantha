@@ -54,20 +54,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-           <!-- <a id="negro" class="" href="#">Manita negra</a> -->
+           <img id="negro" src="assets/img/mano.png"></img> 
 
     </div>
    
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse m-t-10" id="bs-example-navbar-collapse-1">
-  <div class="fb-like" data-href="https://www.facebook.com/PanthaTravel/?fref=ts" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+  <!-- <div class="fb-like" data-href="https://www.facebook.com/PanthaTravel/?fref=ts" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>-->
 
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav ul-margen">
         <li id="cuadro-negro"></li>
         <li class="<?php echo ($this->session->userdata('menu')=='Inicio')?'active_menu':'' ?>"><a class="label-menu" href="#">Inicio</a></li>
-      	<li class="<?php echo ($this->session->userdata('menu')=='proceso')?'active_menu':'' ?>"><a class="label-menu" class="salto" href="<?php echo site_url('inicio/promociones') ?>">Promociones</a></li>
-       	<li class="<?php echo ($this->session->userdata('menu')=='formato')?'active_menu':'' ?>"><a class="label-menu" class="salto" href="<?php echo site_url('inicio/eventos') ?>">Metal Eventos</a></li>
-        <li class="<?php echo ($this->session->userdata('menu')=='comprar')?'active_menu':'' ?>"><a class="label-menu" class="salto" href="<?php echo site_url('inicio/contacto') ?>">Contacto</a></li>
+      	<li class="<?php echo ($this->session->userdata('menu')=='promociones')?'active_menu':'' ?>"><a class="label-menu" class="salto" href="<?php echo site_url('inicio/promociones') ?>">Promociones</a></li>
+       	<li class="<?php echo ($this->session->userdata('menu')=='metal')?'active_menu':'' ?>"><a class="label-menu" class="salto" href="<?php echo site_url('inicio/eventos') ?>">Metal Eventos</a></li>
+        <li class="<?php echo ($this->session->userdata('menu')=='contacto')?'active_menu':'' ?>"><a class="label-menu" class="salto" href="<?php echo site_url('inicio/contacto') ?>">Contacto</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

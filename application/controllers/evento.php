@@ -56,7 +56,7 @@ class Evento extends CI_Controller {
             $datos = array('artista' =>$this->input->post("artista"),  
                                 'precio' =>$this->input->post("precio"), 
                                 'lugar' =>$this->input->post("lugar"), 
-                                'fecha' =>$this->input->post("fecha"), 
+                                'fecha' =>date2sql($this->input->post("fecha")), 
                                 'hora' =>$this->input->post("hora"), 
                                 'link' =>$this->input->post("link"), 
                                 'texto' =>$this->input->post("texto"),            
@@ -76,7 +76,7 @@ class Evento extends CI_Controller {
                  $datos = array('artista' =>$this->input->post("artista"),  
                                 'precio' =>$this->input->post("precio"), 
                                 'lugar' =>$this->input->post("lugar"), 
-                                'fecha' =>$this->input->post("fecha"), 
+                                'fecha' =>date2sql($this->input->post("fecha")), 
                                 'hora' =>$this->input->post("hora"), 
                                 'link' =>$this->input->post("link"), 
                                 'texto' =>$this->input->post("texto"),            
@@ -115,9 +115,9 @@ class Evento extends CI_Controller {
 
 
   $data['input_precio'] = form_input('precio',set_value('precio',exist_obj($this->info,'precio')),'class="form-control" id="precio" ');
-  $data['input_lugar'] = form_input('lugar',set_value('lugar',exist_obj($this->info,'lugar')),'class="form-control" id="lugar" ');
-  $data['input_fecha'] = form_input('fecha',set_value('fecha',exist_obj($this->info,'fecha')),'class="form-control" id="fecha" ');
-  $data['input_hora'] = form_input('hora',set_value('hora',exist_obj($this->info,'hora')),'class="form-control" id="hora" ');
+  $data['input_lugar'] = form_input('lugar',set_value('lugar',exist_obj($this->info,'lugar')),'class="form-control" id="lugar" maxlength="40" ');
+  $data['input_fecha'] = form_input('fecha',date_eng2esp_1(set_value('fecha',exist_obj($this->info,'fecha'))),'class="form-control date" id="fecha" ');
+  $data['input_hora'] = form_input('hora',set_value('hora',exist_obj($this->info,'hora')),'class="form-control hora" id="hora" ');
   $data['input_link'] = form_input('link',set_value('link',exist_obj($this->info,'link')),'class="form-control" id="link" ');
   $data['input_texto'] = form_input('texto',set_value('texto',exist_obj($this->info,'texto')),'class="form-control" id="texto" ');
 

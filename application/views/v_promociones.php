@@ -7,17 +7,11 @@ body{
 }
 </style>
 <div class="container-promocion">
-<!--<div class="row">
-	<div class="col-sm-2">
-		<img class="img img-responsive"  src="assets/img/1.jpg">
-	</div>
-</div> -->
 	<div class="container" style="margin-top:40px">
 	<div class="row">
 		<div class="col-sm-4 pull-right">
-			<h3 style="font-weight: bold;color: white">
-				Consúltenos sin compromiso,
-el compromiso es servirle.
+			<h3 style="font-weight: bold;color: black">
+				Consúltenos sin compromiso, el compromiso es servirle.
 			</h3>
 		</div>
 	</div>

@@ -8,6 +8,7 @@ public function __construct()
     $this->load->model("M_banner","mb");
     $this->load->model("M_promocion","mp");
     $this->load->model("M_imagenes","mi");
+    $this->load->model("M_evento","me");
 }
 public function index()
 {
@@ -23,13 +24,17 @@ public function promociones(){
   $datos['imagenes']=$this->mi->getImagenes();
   $this->load->view('v_promociones',$datos);
 }
-public function proceso(){
-   $this->session->set_userdata('menu','proceso');
-  $this->load->view('v_proceso');
+public function eventos(){
+  $this->session->set_userdata('menu','metal');
+  $datos['eventos']=$this->me->getEvento(); 
+  $datos['imagenes']=$this->mi->getImagenes();
+  $this->load->view('v_eventos',$datos);
 }
+
 public function contacto(){
-   $this->session->set_userdata('menu','formato');
-  $this->load->view('v_contacto');
+  $this->session->set_userdata('menu','contacto');
+  $datos['imagenes']=$this->mi->getImagenes();
+  $this->load->view('v_contacto',$datos);
 }
 public function enviar(){
 
@@ -43,7 +48,7 @@ public function enviar(){
           $datos['contacto']=$_POST;
           $titulo = "Nuevo comentario"; 
           $cuerpo = $this->load->view('v_correo',$datos,TRUE);
-          enviar_correo("albertopitava@gmail.com",$titulo,$cuerpo,$_POST['email']); 
+          enviar_correo("edgar@the4studio.com ",$titulo,$cuerpo,$_POST['email']); 
       //$this->mt->guardar_ticket();
     }
     else{
@@ -57,9 +62,7 @@ public function enviar(){
           echo json_encode($errors);
       }
 }
-  public function metodos(){
-    $this->load->view('v_metodos');
-  }
+
 
 }
 

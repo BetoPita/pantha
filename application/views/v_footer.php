@@ -46,7 +46,7 @@
 	});
 	$('#Carousel').carousel({
 	    interval: 20000
-	})
+	});
 
 });
 </script>

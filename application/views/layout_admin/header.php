@@ -30,7 +30,12 @@
     <script src="statics/js/libraries/jquery.numeric.js"></script>
     <script src="statics/js/libraries/jquery.blockUI.js"></script>
     <script src="statics/js/libraries/autoNumeric.js"></script>
+     <script type="text/javascript" src="assets/js/moment.min.js" charset="UTF-8"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.css"> 
+    
     <script src="statics/js/libraries/renovando.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+   
 
     
     <!--<link href="<?php echo base_url();?>assets/css/main.css" rel="stylesheet">

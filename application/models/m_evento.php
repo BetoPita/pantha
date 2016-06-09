@@ -18,6 +18,7 @@ class M_evento extends CI_Model{
     public function getEvento(){
       return $this->db->select("*")
                       ->from("evento")
+                      ->order_by('fecha','desc')
                       ->get()
                       ->result();
     }
