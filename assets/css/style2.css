@@ -253,6 +253,9 @@ font-family: impact;
 text-shadow: 3px 4px 7px white, 0px 3px 2px white, -2px -3px 0 white, 0 -4px 1px white;
 -webkit-text-fill-color: black;
 }
+  .img-slider{
+    background-size: cover;
+  } 
 @media (max-width: 778px) {
 	 .event .rsvp i {
         font-size:35px !important;
