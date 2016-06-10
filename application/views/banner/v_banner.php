@@ -33,7 +33,7 @@
 
 				<?php foreach ($banner as $i) {?>
 				<tr>
-					<td><img src="<?php echo base_url($i->imagen) ?>" width="200px" alt=""></td>
+					<td><img src="<?php echo base_url($i->imagen) ?>" style="width:100px;height:100px;"  alt=""></td>
 					<td class="acciones">
 						<a class="js_editar fa fa-pencil-square-o cursorPointer" title="Editar" data-toggle="tooltip" data-placement="top" data-id="<?php echo $i->id ?>"> <a/>
 						<a class="js_eliminar fa fa-trash-o cursorPointer" title="Eliminar" data-toggle="tooltip" data-placement="top" data-id="<?php echo $i->id ?>"></a>

@@ -16,6 +16,11 @@ body{
 				</div>
 			</div>
 			<div class="row">
+				<div class="col-sm-6">
+					<img class="img img-responsive" src="assets/img/contacto-frase.png">
+				</div>
+			</div>
+			<div class="row">
 				<div class="col-sm-5">
 					<div class="row p-b-10">
 						<div class="col-sm-12">
