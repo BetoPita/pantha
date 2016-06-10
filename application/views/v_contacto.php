@@ -77,13 +77,13 @@ body{
 
 
 			</div> <!-- row -->
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-	</div>
+			    
+<br>
+<br>
+<br>
+<br>
+ <div class="col-sm-1 esconderlaapi" id="liquidBoxContainer"></div>
+</div>
 </div>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
  <script type="text/javascript">

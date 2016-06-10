@@ -6,7 +6,7 @@
 	 <link href="statics/css/bootstrap.css" rel="stylesheet">
 	 <link href="statics/css/logOn.css" rel="stylesheet">
 	 <meta name="viewport" content="initial-scale=1">
-
+	 <link rel="shortcut icon" href="<?php echo base_url('favicon.png') ?>"/>
 	<title>Panthatravel</title>
 </head>
 <body>

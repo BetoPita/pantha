@@ -1,4 +1,4 @@
-<form id="form-categoria" method="POST" enctype='multipart/form-data' action="<?php echo site_url('imagenes/actualizar_sinfoto'); ?>" >
+<form id="form-categoria" method="POST" enctype='multipart/form-data' action="<?php echo site_url('imagenes_footer/actualizar_sinfoto'); ?>" >
 <input type="hidden" id="id" name="id" value="<?php echo $imagenes[0]->id ?>" />
 <input type="hidden" id="ruta" name="ruta" value="<?php echo $imagenes[0]->path ?>" />
 <div class="row">
@@ -73,8 +73,8 @@
       	});
 
 	    $("#cambiar").on("click",function(){ 
-	     	var sin_foto= "<?php echo site_url();?>/imagenes/actualizar_sinfoto";
-	     	var con_foto= "<?php echo site_url();?>/imagenes/actualizar";
+	     	var sin_foto= "<?php echo site_url();?>/imagenes_footer/actualizar_sinfoto";
+	     	var con_foto= "<?php echo site_url();?>/imagenes_footer/actualizar";
 	     	if( $('#cambiar').prop('checked') ) {
 			   $("#div_imagen").removeClass("hidden");
 			    $('#form-categoria').prop('action', con_foto);

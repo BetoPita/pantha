@@ -81,14 +81,14 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <img src="<?php echo get_logo();?>" style="margin-left: 10px; padding-top: 10px; padding-bottom: 10px; width: 200px !important; height: 60px; !important" >
+                        <img src="<?php echo get_logo();?>" style="float:center;margin-left: 50px; padding-top: 10px; padding-bottom: 10px; width: 100px !important; height: 80px; !important" >
                     </li>
                     
                     <li >
                         <a href="<?php echo site_url();?>/banner/"><i class="fa fa-list-ul"></i> Banner</a>
                     </li>
                     <li>
-                       <a href="<?php echo site_url();?>/imagenes/"> <i class="fa fa-inbox"></i> Imagenes</a>
+                       <a href="<?php echo site_url();?>/imagenes_footer/"> <i class="fa fa-inbox"></i> Imagenes</a>
                     </li>
                     <li>
                         <a href="<?php echo site_url();?>/evento"><i class="fa fa-cubes"></i> Evento</a>

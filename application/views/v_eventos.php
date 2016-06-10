@@ -36,5 +36,11 @@ body{
 		</div>
 		<br>
 	<?php } ?>
-</div>
+	
+<br>
+<br>
+<br>
+<br>
+ <div class="col-sm-1 esconderlaapi" id="liquidBoxContainer"></div>
+
 <?php $this->load->view('v_footer'); ?>

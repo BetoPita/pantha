@@ -1,7 +1,7 @@
 	$(document).ready(function(){
 
-		var url = site_url+'/imagenes/nuevo';
-		var	urleditar=site_url+'/imagenes/editar';
+		var url = site_url+'/imagenes_footer/nuevo';
+		var	urleditar=site_url+'/imagenes_footer/editar';
 		 ConstruirTabla("tbl_productos","No hay resultados para mostrar.",2);
         $("body").tooltip({ selector: "[data-toggle='tooltip']" });
 
@@ -32,7 +32,7 @@
 	}
  function callbackEliminar(){
         var oTable1 = $('#tbl_productos').dataTable();
-        var url =site_url+"/imagenes/eliminar";
+        var url =site_url+"/imagenes_footer/eliminar";
         ajaxJson(url,{"id":opcion},"POST","",function(result){
             if(result != 0)
             {

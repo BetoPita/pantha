@@ -13,9 +13,11 @@
 		$CI = & get_instance();
 		$CI->email->initialize($configGmail);
 		$CI->email->from($dequien, 'Panthatravel');
-		$CI->email->to($correo);
+		$CI->email->to('david@panthatravel.com');
+
+
         //si quieres que te envíen una copia a otro correo descomenta abajo y ponlo
-		$CI->email->cc('albertopitava@gmail.com');
+		$CI->email->cc('linda@panthatravel.com');
 		$CI->email->subject($titulo);
 		$CI->email->message($cuerpo);
 		$CI->email->send();

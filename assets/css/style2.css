@@ -87,10 +87,17 @@ ul.nav > li:hover{
 	width: 7%;
 	display: inline-block;
 }
-#negro {
+#negro222 {
     position: fixed;
    width: 91px; padding: 0px;
     left: 0px;
+}
+#negro {
+    left: 0;
+    padding: 0;
+    position: relative;
+    width: 91px;
+    margin-left: -15px;
 }
 
 .panel.panel-horizontal {
@@ -232,6 +239,20 @@ textarea{
 .ul-margen{
 padding-left: 150px
 }
+#liquidBoxContainer{
+  margin-bottom: 300px;
+}
+#div-like{
+  padding-top: 25px; margin-left: 20px;
+}
+hr {border: 0; height: 12px; box-shadow: inset 0 12px 12px -12px #e75e15;}
+.stroke {
+text-align: center;
+color: black;
+font-family: impact;
+text-shadow: 3px 4px 7px white, 0px 3px 2px white, -2px -3px 0 white, 0 -4px 1px white;
+-webkit-text-fill-color: black;
+}
 @media (max-width: 778px) {
 	 .event .rsvp i {
         font-size:35px !important;
@@ -285,11 +306,17 @@ padding-left: 150px
   .rsvp{
     margin-right: 10px;
   }
+  .esconderlaapi{
+    display: none !important;
+  }
+  #linea{
+    display: none !important;
+  }
 	
  }
   @media (max-width: 400px) {
 	.img-slider{
-	height: 400px !important;
+	height: 450px !important;
 	} 
 	#mapa-direccion{
 		width: 300px !important;

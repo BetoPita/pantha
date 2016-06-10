@@ -10,8 +10,8 @@ body{
 	<div class="container" style="margin-top:40px">
 	<div class="row">
 		<div class="col-sm-4 pull-right">
-			<h3 style="font-weight: bold;color: black">
-				Consúltenos sin compromiso, el compromiso es servirle.
+			<h3 style="font-weight: bold;color: black" class="stroke">
+				Consúltenos sin compromiso, será un placer servirle
 			</h3>
 		</div>
 	</div>
@@ -32,15 +32,10 @@ body{
 			</div>		
 		</div>
 	<?php } ?>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	</div>
+    <hr id="linea">
+<br>
+<br>
+ <div class="col-sm-1 esconderlaapi" id="liquidBoxContainer"></div>
+</div>
 </div>
 <?php $this->load->view('v_footer'); ?>

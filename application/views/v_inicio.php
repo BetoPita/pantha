@@ -1,15 +1,12 @@
 <?php $this->load->view('v_header'); ?>
 
 <link rel="stylesheet" href="assets/css/style2.css"> 
-
-
-<!--<div class="row">
-    <div class="col-sm-1" id="liquidBoxContainer"></div>
-
-</div> -->
 <style type="text/css">
 .header{
 	position: relative !important;
+}
+body{
+     background: url('assets/img/vive.jpg') no-repeat center center fixed;
 }
 </style>
 <header id="myCarousel" class="carousel slide">
@@ -41,6 +38,11 @@
         </a>
 
     </header>
+    <hr id="linea">
+<br>
+<br>
+ <div class="col-sm-1 bajar-redes esconderlaapi" id="liquidBoxContainer"></div>
+
 
 
 <?php $this->load->view('v_footer'); ?>

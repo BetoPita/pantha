@@ -1,4 +1,4 @@
-<form id="form-categoria" method="POST" enctype='multipart/form-data' action="<?php echo site_url('imagenes/agregar'); ?>" >
+<form id="form-categoria" method="POST" enctype='multipart/form-data' action="<?php echo site_url('imagenes_footer/agregar'); ?>" >
 <div class="row">
 	<div class="col-md-7 col-sm-offset-2">
 		<label>Link:</label>	
