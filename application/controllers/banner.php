@@ -34,7 +34,7 @@ public function agregar(){
   $dataimg=subirImg($carpeta,'3000','3000','','imagen');
   $renombrado=$dataimg['file_path'].uniqid().$dataimg['file_ext'];
   rename($dataimg['full_path'],$renombrado) ;
-  DimensionarImg($renombrado,'1179','2368',$dataimg['file_path'].$dataimg['file_name']);
+  DimensionarImg($renombrado,'2368','1179',$dataimg['file_path'].$dataimg['file_name']);
   
   if(file_exists($renombrado)){
     unlink($renombrado);

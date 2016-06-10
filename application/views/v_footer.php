@@ -19,7 +19,7 @@
                     	<div class="item <?php echo ($bandera==true)?'active':'' ?>">
 		                    <div class="row">
                     	<?php } ?>
-		                        <div class="col-xs-2" style="margin-right: "><a href="#" class=""><img class="img img-responsive" src="<?php echo $value->imagen ?>" alt="Image" style="max-width:100%;"></a></div>		                   
+		                        <div class="col-xs-2" style="margin-right: "><a target="_blank" href="<?php echo $value->link ?>" class=""><img class="img img-responsive" src="<?php echo $value->imagen ?>" alt="Image" style="max-width:100%;"></a></div>		                   
 		                <?php $contador++;
 		                	if($contador==6){ 
 		                		$contador=0;

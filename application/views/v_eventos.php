@@ -34,6 +34,7 @@ body{
 				</div>
 			</div>
 		</div>
+		<br>
 	<?php } ?>
 </div>
 <?php $this->load->view('v_footer'); ?>

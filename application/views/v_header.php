@@ -19,7 +19,10 @@
   <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js" charset="UTF-8"></script>
   <script type="text/javascript" src="statics/js/autoNumeric.js" charset="UTF-8"></script>
   <script type="text/javascript" src="statics/js/jquery.numeric.js" charset="UTF-8"></script>
- 
+  <script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'es'}
+</script>
+ <link rel="shortcut icon" href="<?php echo base_url('favicon.png') ?>"/>
 	<title>Pantha</title>
 </head>
 
@@ -40,7 +43,7 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.6";
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -60,8 +63,11 @@
    
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse m-t-10" id="bs-example-navbar-collapse-1">
-  <!-- <div class="fb-like" data-href="https://www.facebook.com/PanthaTravel/?fref=ts" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>-->
-
+  <div id="div-like" class="fb-like" data-href="https://www.facebook.com/PanthaTravel/?fref=ts" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+<!-- Inserta esta etiqueta donde quieras que aparezca Botón +1. -->
+<!-- Inserta esta etiqueta donde quieras que aparezca Botón +1. -->
+<div class="g-plusone" data-size="small" data-annotation="none" data-href="https://plus.google.com/113669818750674666365/about"></div>
+<!-- Facebook Like Badge START -->
       <ul class="nav navbar-nav ul-margen">
         <li id="cuadro-negro"></li>
         <li class="<?php echo ($this->session->userdata('menu')=='Inicio')?'active_menu':'' ?>"><a class="label-menu" href="<?php echo base_url('inicio') ?>">Inicio</a></li>

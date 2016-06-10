@@ -226,6 +226,9 @@ background: #428bca;
 textarea{
 	resize:none;
 }
+.div-like{
+  margin-top: 20px;
+}
 .ul-margen{
 padding-left: 150px
 }
@@ -271,6 +274,17 @@ padding-left: 150px
 	#mapa-direccion{
 		width: 400px !important;
 	}
+  .detalle-evento{
+    font-size: 25px;
+  }
+  .info > p {
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 12px;
+  }
+  .rsvp{
+    margin-right: 10px;
+  }
 	
  }
   @media (max-width: 400px) {

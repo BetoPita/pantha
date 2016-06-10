@@ -27,7 +27,7 @@
         	<?php $contador=0; ?>
 	    	<?php foreach ($banner as $b => $value) { $contador++; ?>
 	    		 <div class="item <?php echo ($contador==1)?'active': '' ?>">
-	            	<img class="img img-responsive img-slider" src="statics/img/banner/textobanner2.png" alt="">
+	            	<img class="img img-responsive img-slider" src="<?php echo $value->imagen ?>" alt="">
 	            </div>
 	    	<?php } ?>
         </div>
