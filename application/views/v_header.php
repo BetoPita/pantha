@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.css"> 
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css"> 
   <link href="assets/css/full-slider.css" rel="stylesheet">
-
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
   
   <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js" charset="UTF-8"></script>
   <script type="text/javascript" src="statics/js/autoNumeric.js" charset="UTF-8"></script>

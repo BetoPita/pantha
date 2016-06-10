@@ -42,18 +42,18 @@ class Promocion extends CI_Controller {
           $carpeta="statics/img/promociones/";
 
            if($id==0){  
-              $dataimg=subirImg($carpeta,'3000','3000',$_FILES['imagen']['name'],'imagen');
+              $dataimg=subirImg($carpeta,'5000','5000',$_FILES['imagen']['name'],'imagen');
               $renombrado=$dataimg['file_path'].uniqid().$dataimg['file_ext'];
               rename($dataimg['full_path'],$renombrado) ;
-              DimensionarImg($renombrado,'192','192',$dataimg['file_path'].$dataimg['file_name']);
+              DimensionarImg($renombrado,'350','960',$dataimg['file_path'].$dataimg['file_name']);
           
               if(file_exists($renombrado)){
                 unlink($renombrado);
               }
 
-              if (!empty($_FILES['pdf']['name']))
+              if (!empty($_FILES['imagen2']['name']))
               {
-                  $dataarchivo=subirImg($carpeta,'3000','3000',$_FILES['pdf']['name'],'pdf');
+                  $dataarchivo=subirImg($carpeta,'5000','5000',$_FILES['imagen2']['name'],'imagen2');
               }
               
               if (!file_exists($carpeta)) {
@@ -65,7 +65,7 @@ class Promocion extends CI_Controller {
                       'precio'=>$this->input->post("precio"),
                       'imagen'=>$carpeta.$dataimg['raw_name'].$dataimg['file_ext'],
                       'path'=>$dataimg['full_path'],    
-                      'pdf'=> (empty($_FILES['pdf']['name']))?'':$carpeta.$dataarchivo['raw_name'].$dataarchivo['file_ext']
+                      'pdf'=> (empty($_FILES['imagen2']['name']))?'':$carpeta.$dataarchivo['raw_name'].$dataarchivo['file_ext']
                       );
                        
               if($this->mp->guardarPromocion($datos)) {
@@ -78,30 +78,30 @@ class Promocion extends CI_Controller {
                 
               }
             }else{
+
               if (!empty($_FILES['imagen']['name']))
               {
-                 $dataimg=subirImg($carpeta,'3000','3000','','imagen');
-                 $renombrado=$dataimg['file_path'].uniqid().$dataimg['file_ext'];
+                 $dataimg=subirImg($carpeta,'5000','5000','','imagen');
+                  $renombrado=$dataimg['file_path'].uniqid().$dataimg['file_ext'];
                   rename($dataimg['full_path'],$renombrado) ;
-                  DimensionarImg($renombrado,'192','192',$dataimg['file_path'].$dataimg['file_name']);
+                  DimensionarImg($renombrado,'350','960',$dataimg['file_path'].$dataimg['file_name']);
               
                   if(file_exists($renombrado)){
                     unlink($renombrado);
                   }
                  $img_guardar=$carpeta.$dataimg['raw_name'].$dataimg['file_ext'];
                  $path=$dataimg['full_path'];
-              }else{
+              }else{               
                 $img_guardar=$this->input->post('img');
                 $path='';
               }
 
-
-              if (!empty($_FILES['pdf']['name']))
+              if (!empty($_FILES['imagen2']['name']))
               {
-                 $dataarchivo=subirImg($carpeta,'3000','3000','','pdf');
+                 $dataarchivo=subirImg($carpeta,'5000','5000','','imagen2');
                  $archivo_guardar=$carpeta.$dataarchivo['raw_name'].$dataarchivo['file_ext'];
               }else{
-                $archivo_guardar=$this->input->post('pdf_save');
+                $archivo_guardar=$this->input->post('pdfsave');
               }
                  $datos = array('titulo' =>$this->input->post("titulo"),
                       'destino'=>$this->input->post("destino"),

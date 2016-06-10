@@ -20,7 +20,7 @@ body{
 			<div class="col-sm-5">
 					<div class="panel panel-default panel-horizontal">
 					    <div class="panel-heading">
-					       <img class="img" style="width:150px;height: 200px"  src="assets/img/1.jpg">
+					       <img class="img" style="width:150px;height: 200px"  src="<?php echo $value->imagen ?>">
 					    </div>
 					    <div class="panel-body">
 					    	<h3 class="titulo-promocion"><?php echo $value->destino ?></h3>
@@ -32,6 +32,15 @@ body{
 			</div>		
 		</div>
 	<?php } ?>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 	</div>
 </div>
 <?php $this->load->view('v_footer'); ?>

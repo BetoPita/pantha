@@ -59,7 +59,7 @@ textarea {
 	        <?php if($pdf!=''){ ?> 
 	         <a target="_blank" href="<?php echo base_url().'/'.$pdf ?>">ver pdf</a> 
 	         <?php } ?>
-	        <input type="file" id="pdf" name="pdf" />
+	        <input type="file" id="imagen2" name="imagen2" />
 
 	      </div>
     </div>
