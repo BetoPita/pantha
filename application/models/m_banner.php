@@ -14,6 +14,7 @@ class M_banner extends CI_Model{
     public function getBanner(){
         return $this->db->select("*")
                         ->from("banner")
+                        ->order_by('id','asc')
                         ->get()
                         ->result();
     }

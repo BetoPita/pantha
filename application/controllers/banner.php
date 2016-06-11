@@ -31,7 +31,7 @@ public function agregar(){
           mkdir($carpeta, 0777, true);
       }
   
-  $dataimg=subirImg($carpeta,'3000','3000','','imagen');
+  $dataimg=subirImg($carpeta,'3000','3000',$_FILES['imagen']['name'],'imagen');
   $renombrado=$dataimg['file_path'].uniqid().$dataimg['file_ext'];
   rename($dataimg['full_path'],$renombrado) ;
   DimensionarImg($renombrado,'2368','1179',$dataimg['file_path'].$dataimg['file_name']);
@@ -120,7 +120,7 @@ public function agregar(){
       if (!file_exists($carpeta)) {
           mkdir($carpeta, 0777, true);
       }
-      $dataimg=subirImg($carpeta,'3000','3000','','imagen');
+      $dataimg=subirImg($carpeta,'3000','3000',$_FILES['imagen']['name'],'imagen');
       $renombrado=$dataimg['file_path'].uniqid().$dataimg['file_ext'];
       rename($dataimg['full_path'],$renombrado) ;
       DimensionarImg($renombrado,'2368','1179',$dataimg['file_path'].$dataimg['file_name']);
