@@ -7,6 +7,7 @@
 }
 body{
      background: url('assets/img/vive.jpg') no-repeat center center fixed;
+     background-size: cover !important;
 }
 </style>
 <header id="myCarousel" class="carousel slide">
