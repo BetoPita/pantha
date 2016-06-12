@@ -10,7 +10,7 @@ body{
 	<div class="row">
 		<div class="col-sm-7">
 			<div id="eventos-container">
-			    <h2>Viajes a conciertos en Guadalajara & Calendario de eventos</h2>
+			    <h2>Viajes a conciertos & Calendario de eventos</h2>
 			    <span id="subtitulos">Próximas fechas</span>
 			</div>
 		</div>
